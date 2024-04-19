@@ -11,5 +11,4 @@ public class GraphQLWithSpringBootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GraphQLWithSpringBootApplication.class, args);
 	}
-
 }

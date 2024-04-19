@@ -6,9 +6,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Query implements GraphQLQueryResolver {
+public class Query1 implements GraphQLQueryResolver {
 
-	private static final Logger logger = LoggerFactory.getLogger(Query.class);
+	private static final Logger logger = LoggerFactory.getLogger(Query1.class);
 
 	public String firstQuery () {
 		logger.info("{}#firstQuery() is called !", this.getClass().getSimpleName());
