@@ -1,4 +1,17 @@
 type Query {
 	firstQuery : String
 	secondQuery : String
+	fullName(firstName : String, secondName : String ) : String
+	fullNameWithAge(firstName : String!, secondName : String, age : Int) : String
+	fullNameWithJsonInput(request : SampleRequest) : String
+	fullNameWithJsonInputAndModelResp(request: SampleRequest) : SampleResponse
+}
+
+input SampleRequest {
+    firstName: String!
+    lastName: String
+}
+
+type SampleResponse {
+    response : String
 }
